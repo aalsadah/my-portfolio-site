@@ -1,0 +1,221 @@
+:root {
+  --page-bg: #f5f1eb;
+  --panel-bg: rgba(255, 255, 255, 0.8);
+  --panel-strong: #fffdfb;
+  --ink: #1f1f1f;
+  --muted: #4a4a4a;
+  --accent: #d95d39;
+  --accent-strong: #b6472d;
+  --accent-soft: #f8d5c6;
+  --line: rgba(31, 31, 31, 0.14);
+  --shadow: 0 18px 40px rgba(27, 22, 18, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(217, 93, 57, 0.12), transparent 30%),
+    linear-gradient(180deg, var(--page-bg), #f8f5f2 38%, #f3efe9 100%);
+  color: var(--ink);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.6;
+}
+
+body > header,
+body > main,
+body > footer {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+body > header {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.25rem 0 0.75rem;
+}
+
+body > header h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body > nav {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  padding: 0.6rem 1rem;
+}
+
+body > nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body > nav a {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+body > nav a:hover,
+body > nav a:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  transform: translateY(-1px);
+}
+
+body > main {
+  padding: 1.5rem 0 2.5rem;
+}
+
+body > main h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+body > main p {
+  max-width: 70ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+body > main > section {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+body > main picture {
+  display: block;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+body > main img {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+body > main ol {
+  margin: 0.75rem 0 0;
+  padding-left: 1.4rem;
+  color: var(--muted);
+}
+
+body > main li + li {
+  margin-top: 0.45rem;
+}
+
+iframe {
+  display: block;
+  max-width: 100%;
+  margin-top: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+
+body > main dad-joke {
+  display: block;
+  margin-top: 0.85rem;
+}
+
+body > main button,
+body > footer button {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.8rem 1.3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 20px rgba(185, 71, 45, 0.22);
+}
+
+body > main button:hover,
+body > footer button:hover,
+body > main button:focus-visible,
+body > footer button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 24px rgba(185, 71, 45, 0.28);
+}
+
+body > main .display-joke {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.8rem;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+body > footer {
+  padding: 1rem 0 2.5rem;
+}
+
+body > footer p {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+}
+
+body > footer dialog {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.3rem 1.5rem;
+  background: var(--panel-strong);
+  box-shadow: var(--shadow);
+}
+
+body > footer dialog p {
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 700px) {
+  body > header,
+  body > main,
+  body > footer {
+    width: min(100% - 1rem, 1100px);
+  }
+
+  body > main {
+    padding-top: 1rem;
+  }
+
+  body > main > section {
+    padding: 1rem;
+  }
+
+  body > nav {
+    border-radius: 1rem;
+  }
+
+  body > nav ul {
+    justify-content: flex-start;
+  }
+}
