@@ -1,13 +1,1 @@
 Website Netlify Link: [alis-port.netlify.app](https://alis-port.netlify.app/)
-
-
-why is it so hard to decide where I want to continue my project from....
-
-I mean I feel like it shouldnt matter to me but it does and now I feel stuck...
-
-not that the progress is that much....
-
-pushing and pulling from repos and copying local files and folders changing the origin and deploying from different sources all that is stressful to me right now but it is very doable and it is a part of how this technology is built to work.
-
-
-okay so I take the latest version of the site -> migrate it to this folder, then push those changes to this repo. Migration experience...
