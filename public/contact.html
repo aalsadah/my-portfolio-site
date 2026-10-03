@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0"> 
+        <title>Ali AlSadah Portfolio</title>
+        <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/tokens.css">
+        <link rel="stylesheet" href="./styles/09-grid-holy-grail.css">
+        <script src="./js/formReport.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Site Navigation</h1>
+            <nav>
+                <ul>
+                    <li><a href = "/index.html"> Home Page</a></li>
+                    <li><a href = "/projects.html">Projects</a></li>
+                    <li><a href = "/experience.html">Experience</a></li>
+                    <li><a href = "/contact.html">Contact</a></li>
+                    <li><a href = "documents/resume2.pdf" target="_blank">Resume</a></li>
+                    <li><a href="./expiremental.html"><i>Expiremental</i></a></li>
+                </ul>   
+            </nav>    
+        </header>
+        <main>
+            <section id="socials-box" name="socials-box">
+                <h2>Checkout my Socials!</h2>
+                <ul>
+                    <li>Email me:<a href="mailto:alimms2004@gmail.com">alimms2004@gmail.com</a></li>
+                    <br>
+                    <li>Visit my Github Page: <a href = "https://github.com/aalsadah" target="_blank">
+                        <img width="100" height="100" src = "assets/github-icon.png" alt = "Ali AlSadah's Github profile link"/>
+                    </a></li>
+                    <br>
+                    <li>Connect on Linkedin: <a href = "https://www.linkedin.com/in/ali-alsadah2004/" target="_blank">
+                        <img width="100" height="100" src = "assets/linkedIn-icon.png" alt = "Ali AlSadah's LinkedIn profile link"/>
+                    </a></li>
+                    <br>
+                </ul>
+            </section>
+
+            <noscript>Form Error reporting and narrator announcing will not work with JavaScript disabled :&lpar;</noscript>
+            <form id="contact-form" name="contact-form" title="contact form">
+                <fieldset>
+                    <legend>Send Me A Message!</legend>
+
+                    <div class="field">
+                        <label for="name">Enter Your Name: </label>
+                        <input type="text" id="name" name="name" required minlength="1" maxlength="128" title="name field">
+                        <span></span>
+                        <output id="name-output" aria-live="polite"></output>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Enter Your Email: </label>
+                        <input type="email" name="email" id="email" required minlength="3" maxlength="128" title="email field">
+                        <span></span>
+                        <output id="email-output" aria-live="polite"></output>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Enter Your Message: </label>
+                        <textarea id="message" name="message" rows="5" cols="33" minlength="2" maxlength="1000" required title="message field">...Hello!</textarea>
+                        <span></span>
+                        <output id="message-output" aria-live="polite"></output>
+                    </div>
+                    <input type="hidden" name="form-errors" id="form-errors-json" value="">
+                    <button type="submit" id="submit">send</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>Page made with love &hearts; </footer>
+    </body>
+</html>

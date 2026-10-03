@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ali AlSadah Portfolio</title>
+        <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/tokens.css">  
+        <link rel="stylesheet" href="./styles/09-grid-holy-grail.css">
+        <script src="./js/webComponent.js" type="module"></script>
+    </head>
+    <body>    
+        <header>
+            <h1>Site Navigation</h1>
+            <nav>
+                <ul>
+                    <li><a href = "/index.html"> Home Page</a></li>
+                    <li><a href = "/projects.html">Projects</a></li>
+                    <li><a href = "/experience.html">Experience</a></li>
+                    <li><a href = "/contact.html">Contact</a></li>
+                    <li><a href = "documents/resume2.pdf" target="_blank">Resume</a></li>
+                    <li><a href="/expiremental.html"><i>Expiremental</i></a></li>
+                </ul>   
+            </nav>    
+        </header>
+        <main>
+            <h2>Hello I am Ali AlSadah, Welcome!</h2>
+            <p>
+            I am a <b>UCSD</b> undergraduate about to earn my bachelors degree in <strong>Computer Engineering.</strong> I am looking for <i>entry</i> level jobs where I can learn and gain experience on the broad and fascinating field of Computer Engineering.
+            </p>
+            <section>
+                <picture>
+                    <source srcset="/assets/lab-lossy.gif" type="image/gif">
+                    <img src="/assets/lab-lossy.gif" alt="Lab Equipment">
+                </picture>
+            </section>
+            <section>
+                <h3>Interests:</h3>
+                    <ol>
+                        <li>Cooking</li>
+                        <li>Video Games</li>
+                        <li>Running</li>
+                    </ol>
+            </section>
+            <section>
+                <h4>♫ An album I love ♫</h4>
+                <iframe allow="autoplay *; encrypted-media *;" height="450"
+                    style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+                    src="https://embed.music.apple.com/us/album/twilight/1596227761">
+                </iframe>
+            </section>
+            <section>
+                <h5>press for more dumb jokes <noscript>(No jokes if you dont have JS on!)</noscript></h5>
+                <dad-joke>
+                </dad-joke>
+                <template id="joke-template">
+                    <button type="button">xD</button>
+                    <div class="display-joke"></div>
+                </template>
+            </section>
+        </main>
+
+        <footer>
+        <p>Page made with love &hearts;</p>
+        <button command="show-modal" commandfor="my-dialog">&hearts; Like this Page &hearts;</button>
+        <dialog id="my-dialog">
+            <p>Thank you for liking the page!</p>
+            <button commandfor="my-dialog" command="close">Close</button>
+        </dialog>
+        </footer>
+    </body>
+</html>
